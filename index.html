@@ -10,6 +10,7 @@
         <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/vex-js/3.0.0/css/vex-theme-flat-attack.css'>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/map.css">
     </head>
     <body>
         <body class="please" id="top">
@@ -20,6 +21,7 @@
                         <a href="#apps">Apps</a>
                         <a href="#services">Services</a>
                         <a href="#about">About Us</a>
+                        <a href="#contact">Contact Us</a>
                     </nav>
                 </header>
                 <!--Sections-->
@@ -67,7 +69,7 @@
                         <h4 class="portfolio-projects--title">A New Take On Apps</h4>
                         <p class="portfolio-projects--desc">We love to challenge ourselves and think of things not many have tried before. Because of this we are always thinking of ways to fill a need through software.&nbsp;</p>
                         <p class="portfolio-projects--desc">If you or your company have a need that you are looking to have filled. Please contact us and let us know about it.&nbsp;</p>
-                        <a class="btn btn-rounded portfolio-projects--btn" href="#about" role="button">Contact Bliss Studios</a>
+                        <a class="btn btn-rounded portfolio-projects--btn" href="#contact" role="button">Contact Bliss Studios</a>
                     </div>
                     <div class="right2 col-sm-7 text-center">
                         <img class="portfolio-projects--image" src="images/bliss_nexus.png">
@@ -77,6 +79,7 @@
                     </div> -->
                 </section>
                 <section id="services">
+                    <br><br>
                     <h1>Services</h1>
                     <div class="right col-sm-5 text-center pull-right-sm">
                         <!--flipped on small, unflipped on large-->
@@ -119,7 +122,7 @@
                         <img class="img-rounded portfolio-projects--image" src="images/bliss_surface.png">
                         <h4 class="portfolio-projects--title">Branding & Customization Options</h4>
                         <img class="img-rounded portfolio-projects--image" src="images/bliss_surface2.png">
-                        <a class="btn btn-rounded portfolio-projects--btn" href="#about" role="button">Contact Bliss Studios</a>
+                        <a class="btn btn-rounded portfolio-projects--btn" href="#contact" role="button">Contact Bliss Studios</a>
                     </div>
                                         <!-- <div class="projects x4">
                         <a href="http://sleekupload.com/uploads/5/scifipistol.jpg" data-featherlight="image">
@@ -129,26 +132,71 @@
                 </section>
                 <section class="angler" id="about">
                     <h1>About Us</h1>
+                    <p>We are open for business with two main locations in the US, and more in the works throughout the rest of the globe. </p>
+
                     <br>
-                    <h4 class="footer-header">Get In Touch</h4>
-                    <p style="font-size:125%; margin-top: .25%; margin-bottom: .5%;">Bliss Studios does offer consultation and commercial development services in all above areas, and many more. For inquiries, please send email to <a href="mailto:blissfamilyroms@gmail.com" target="_blank" rel="noreferrer">blissfamilyroms@gmail.com</a> or use the form below, and let us help your dreams come true too.</p>
-                    <form action="mailto:blissfamilyroms@gmail.com" method="GET" data-form-title="CONTACT US">
-                        <input type="hidden" data-form-email="true">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Message" rows="3" data-form-field="Message"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-lg btn-danger">SEND</button>
-                        </div>
-                    </form>
+
+                    <div class="distribution-map">
+                        <!-- This was broken for a while because imgur :( -->
+                        <!-- I don't trust this host. Image here if it goes down: https://i.imgur.com/M7aUkuS.png -->
+                        <img src="images/M7a_Uku_S.png">
+                        <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
+                        <button class="map-point" style="top:35%;left:25%">
+                            <div class="content centered centered-x">
+                                <div class="centered-y ">
+                                    <h4>Bliss Studios - Site 2</h4>
+                                    <p>128 Dale St NE, Grand Rapids, MI 49505</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="map-point" style="top:45%;left:18%">
+                            <div class="content centered centered-x">
+                                <div class="centered-y ">
+                                    <h4>Bliss Studios - Site 1</h4>
+                                    <p>2712 N Salem, 101, Mesa, AZ 85215</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="map-point" style="top:39%;left:46%">
+                            <div class="content centered centered-x">
+                                <div class="centered-y ">
+                                    <h2>COMING SOON</h2>
+                                    <h4>Bliss Studios - Site 3</h4>
+                                    <p>Spain / Italy</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="map-point" style="top:55%;left:68%">
+                            <div class="content centered centered-x">
+                                <div class="centered-y">
+                                    <h2>COMING SOON</h2>
+                                    <h4>Bliss Studios - Site 4</h4>
+                                    <p>India</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
                 </section>
                 <section class="anglel" id="contact">
+                  <br><br>
+                  <h4 class="footer-header">Get In Touch</h4>
+                  <p style="font-size:125%; margin-top: .25%; margin-bottom: .5%;">Bliss Studios does offer consultation and commercial development services in all above areas, and many more. For inquiries, please send email to <a href="mailto:blissfamilyroms@gmail.com" target="_blank" rel="noreferrer">blissfamilyroms@gmail.com</a> or use the form below, and let us help your dreams come true too.</p>
+                  <form action="mailto:blissfamilyroms@gmail.com" method="GET" data-form-title="CONTACT US">
+                      <input type="hidden" data-form-email="true">
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+                      </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control" name="message" placeholder="Message" rows="3" data-form-field="Message"></textarea>
+                      </div>
+                      <div>
+                          <button type="submit" class="btn btn-lg btn-danger">SEND</button>
+                      </div>
+                  </form>
                     <!--<div class="alert2">
         <span class="closebtn" onclick="this.parentElement.style.display='none';" data-pg-id="2721">×</span>
         <p style="font-size:125%; margin-top: .25%; margin-bottom: .5%;" data-pg-id="2722">Bliss Studios does offer consultation and commercial development services in all above areas, and many more. For inquiries, please send email to <a href="mailto:blissfamilyroms@gmail.com" target="_blank" rel="noreferrer" data-pg-id="2723">blissfamilyroms@gmail.com</a> and let us help your dreams come true too.</p>

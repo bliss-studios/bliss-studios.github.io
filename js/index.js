@@ -39,28 +39,28 @@ var section3 = anime({
 	easing:'easeInOutQuad'
 });
 //Vex
-var main = function() { 
-vex.defaultOptions.className = 'vex-theme-flat-attack';
-vex.dialog.open({
-	message: 'Feel free to leave me a message:',
-	input: [
-		'<input name="email" type="email" placeholder="Email" required/>',
-		'<input name="subject" type="text" placeholder="Subject" required/>',
-		'<textarea name="message" placeholder="Message"></textarea>'
-	].join(''),
-	buttons: [
-		$.extend({}, vex.dialog.buttons.YES, { text: 'Send' }),
-		$.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
-	],
-	callback: function (data) {
-			if (!data) {
-				console.log('Cancelled')
-			} else {
-				console.log('Email', data.email, 'Subject', data.subject, 'Message', data.message)
-			}
-	}
-})
-}
+// var main = function() { 
+// vex.defaultOptions.className = 'vex-theme-flat-attack';
+//vex.dialog.open({
+//	message: 'Feel free to leave me a message:',
+//	input: [
+//		'<input name="email" type="email" placeholder="Email" required/>',
+//		'<input name="subject" type="text" placeholder="Subject" required/>',
+//		'<textarea name="message" placeholder="Message"></textarea>'
+//	].join(''),
+//	buttons: [
+//		$.extend({}, vex.dialog.buttons.YES, { text: 'Send' }),
+//		$.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
+//	],
+//	callback: function (data) {
+//			if (!data) {
+//				console.log('Cancelled')
+//			} else {
+//				console.log('Email', data.email, 'Subject', data.subject, 'Message', data.message)
+//			}
+//	}
+//})
+//}
 $("button").on( "click",function(){main();});
 //Smooth Scroll
 $(function() {
