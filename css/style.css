@@ -62,8 +62,9 @@ logo
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 1.2em;
+    font-size: 2.2em;
     font-weight: 400;
+    top: -15%;
 }
 
 nav
